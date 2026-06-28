@@ -1,0 +1,6 @@
+Production validation report
+============================
+
+No blocking issues found.
+All production HTML image sources point to local /assets/img files.
+No old Google image URLs or Cloudflare beacon scripts remain in production HTML/CSS/JS/XML/TXT files.

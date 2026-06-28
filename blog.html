@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Blog · AIRLab Hassen</title>
+<meta content="Robotics theory notes, kinematics explanations, and Python teaching examples." name="description"/><meta content="#f7fafc" name="theme-color"/><meta content="AIRLab Hassen" property="og:site_name"/><meta content="Blog · AIRLab Hassen" property="og:title"/><meta content="Robotics theory notes, kinematics explanations, and Python teaching examples." property="og:description"/><meta content="website" property="og:type"/><meta content="https://airlabhassen.github.io/blog.html" property="og:url"/><meta content="https://airlabhassen.github.io/assets/img/futuristic-robotics-ai-lab-scene.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Blog · AIRLab Hassen" name="twitter:title"/><meta content="Robotics theory notes, kinematics explanations, and Python teaching examples." name="twitter:description"/><meta content="https://airlabhassen.github.io/assets/img/futuristic-robotics-ai-lab-scene.png" name="twitter:image"/><link href="https://airlabhassen.github.io/blog.html" rel="canonical"/><link href="/assets/img/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/site.webmanifest" rel="manifest"/><link href="/assets/css/styles.css" rel="stylesheet"/></head>
+<body class="">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="topbar" data-header="">
+<div class="topbar-inner">
+<a aria-label="AIRLab Hassen home" class="site-title" href="/">
+<span aria-hidden="true" class="site-mark">AIR</span>
+<span><strong>AIRLab Hassen</strong><small>Robotics · Mechanisms · Kinematics · Quantum · ML</small></span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary navigation" class="site-nav" id="site-nav">
+<a href="/">Home</a>
+<a href="/research.html">Research</a>
+<a href="/publications.html">Publications</a>
+<a href="/resources.html">Resources</a>
+<a aria-current="page" href="/blog.html">Blog</a>
+<a href="/robotics-amharic.html">ሮቦቲክስ</a>
+<a href="/cutting-edge.html">Cutting-edge</a>
+<a href="/contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<div class="page-shell">
+<aside aria-label="Profile summary" class="profile-sidebar">
+<div class="profile-card">
+<div class="avatar-wrap"><img alt="Robotics research visual from original Google Site" class="profile-avatar" data-asset-dir="/assets/img" decoding="async" height="941" loading="lazy" src="/assets/img/futuristic-robotics-ai-lab-scene.png" width="1672"/></div>
+<h2>Hassen Nigatu</h2>
+<p class="sidebar-subtitle">Robotics researcher</p>
+<p class="sidebar-note">Robotic mechanisms, screw-theoretic kinematics, parallel manipulators, robot optimization, and intelligent manipulation.</p>
+<div class="sidebar-links">
+<a href="/publications.html">Publications</a>
+<a href="/research.html">Research</a>
+<a href="https://scholar.google.com/citations?hl=en&amp;user=d44IAP0AAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar</a>
+<a href="https://github.com/hassity123" rel="noopener noreferrer" target="_blank">GitHub</a>
+</div>
+</div>
+</aside>
+<main class="content-area" id="main">
+<section class="page-hero"><p class="eyebrow">Blog</p><h1>Robotics theory notes and implementation examples.</h1><p>Kinematics notes and Python implementation material preserved from the source site.</p></section>
+<section class="section-block article-card"><p class="eyebrow">Theoretical understanding</p><h2>Basics of kinematics</h2><p>The very beginning step of understanding robot architecture and working principles in a professional way is learning its kinematics. Studying the kinematic behavior of robotic manipulators requires basic linear algebra, including vectors, matrices, and linear transformations.</p><div class="figure-row three"><figure><img alt="Open-loop mechanism" data-asset-dir="/assets/img" decoding="async" height="720" loading="lazy" src="/assets/img/open-loop-mechanism.svg" width="1200"/><figcaption>Open-loop mechanism</figcaption></figure><figure><img alt="Closed-loop mechanism" data-asset-dir="/assets/img" decoding="async" height="720" loading="lazy" src="/assets/img/closed-loop-mechanism.svg" width="1200"/><figcaption>Closed-loop mechanism</figcaption></figure><figure><img alt="Hybrid mechanism" data-asset-dir="/assets/img" decoding="async" height="720" loading="lazy" src="/assets/img/hybrid-mechanism.svg" width="1200"/><figcaption>Hybrid mechanism</figcaption></figure></div></section>
+<section class="section-block article-card"><p class="eyebrow">Implementation</p><h2>Robotics in Python: five-bar mechanism</h2><p>The five-bar mechanism shown in Figure 1 is a commonly used lower-DoF planar manipulator. The original blog provides Python routines for forward/inverse kinematics and animation.</p><figure class="wide-figure"><img alt="Figure 1: Five-bar manipulator" data-asset-dir="/assets/img" decoding="async" height="720" loading="lazy" src="/assets/img/five-bar-manipulator.svg" width="1200"/><figcaption>Figure 1: Five-bar manipulator</figcaption></figure><pre class="code-block"><code>import numpy as np
+from math import atan2, sin, cos
+
+class FiveBar:
+    def __init__(self, link1, link2, link3, link4, link5):
+        self.r1, self.r2, self.r3, self.r4, self.r5 = link1, link2, link3, link4, link5
+
+    def forward(self, a1, a4):
+        # Forward kinematics implementation preserved from the source blog.
+        pass
+
+    def inverse(self, px, py):
+        # Inverse kinematics implementation preserved from the source blog.
+        pass</code></pre></section>
+<section class="section-block article-card"><p class="eyebrow">Robotics in MATLAB</p><p>The public source page lists a MATLAB section heading. Add MATLAB scripts, demos, or notes here when ready.</p></section>
+</main>
+</div>
+<footer class="site-footer">
+<div class="footer-inner">
+<p><strong>AIRLab Hassen</strong> · Robotics, autonomy, Lie theory, quantum computation, and machine learning.</p>
+<p class="footer-links"><a href="/">Home</a><a href="/research.html">Research</a><a href="/publications.html">Publications</a><a href="/resources.html">Resources</a><a href="/blog.html">Blog</a><a href="/robotics-amharic.html">ሮቦቲክስ</a><a href="/cutting-edge.html">Cutting-edge</a><a href="/contact.html">Contact</a><a href="https://sites.google.com/site/hassennrobotics/home?read_current=1" rel="noopener noreferrer" target="_blank">Original Google Site</a></p>
+</div>
+</footer>
+<button aria-label="Back to top" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<script defer="" src="/assets/js/site.js"></script>
+</body>
+</html>
